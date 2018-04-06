@@ -1,5 +1,8 @@
-# nodejs-alpine
-NodeJS on Alpine 
+# nodejs-ubuntu
+NodeJS on Ubuntu 
 
-This Docker file adds NodeJS on docker/alpine:latest
+This Docker file adds NodeJS on docker/ubuntu:latest
+as well as a few utilities.
+
+It possibly updates the base image.
 
