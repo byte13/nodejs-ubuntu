@@ -11,12 +11,12 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install apt-utils curl wget sudo u
 # Install NodeJS from tarball
 #
 RUN cd /tmp
-RUN wget https://nodejs.org/dist/v14.6.0/node-v14.6.0-linux-x64.tar.gz && \
-    tar xvf node-v14.6.0-linux-x64.tar.gz && \
-    rm node-v14.6.0-linux-x64.tar.gz && \
-    cd node-v14.6.0-linux-x64 && \
+RUN wget https://nodejs.org/dist/latest-v20.x/node-v20.2.0-linux-x64.tar.gz && \
+    tar xvf node-v20.2.0-linux-x64.tar.gz && \
+    rm node-v20.2.0-linux-x64.tar.gz && \
+    cd node-v20.2.0-linux-x64 && \
     cp -R * /usr/local/ && \
-    rm -rf node-v14.6.0-linux-x64 
+    rm -rf node-v20.2.0-linux-x64 
 
 #ENTRYPOINT ["/usr/local/bin/node","--max-old-space-size=256","red.js","-p","7777"]
 #CMD ["/usr/local/bin/node-red","-p","7777"]
